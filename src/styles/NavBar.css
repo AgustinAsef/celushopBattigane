@@ -1,0 +1,35 @@
+.nav{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+}
+
+.navSection{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navSectionDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navTitle{
+    color: black;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.navImg{
+    height: 50px;
+    width: 50px;
+}
+
+.navButton{
+    border: 0;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}

@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function ItemListContainer() {
+export default function ItemListContainer({saludo}) {
 
     return(
         <>
-        <p>hola coder, este es mi item list container</p>
+        <p>{saludo}</p>
         </>
     )
     

@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <NavBar/>
-    <ItemListContainer/>
+    <ItemListContainer saludo={"hola coder, este es mi item list container pasado por props"}/>
     </>
   );
 }

@@ -1,6 +1,6 @@
 .itemListButton{
     width: 400px;
-    height: 200px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,6 +9,15 @@
     margin-top: 1rem;
 }
 
+.itemListText{
+    text-decoration: none;
+}
+
 .itemListDiv{
-    width: 200px;
+    width: 50%;
+}
+
+.itemListImg{
+    height: 100%;
+    width:100% ;
 }

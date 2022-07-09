@@ -1,0 +1,28 @@
+.productsLinkContainer{
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.productContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itemLinkActive{
+    font-size:1.5em;    
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.itemLinkNotActive{
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}

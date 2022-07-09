@@ -1,0 +1,32 @@
+.itemDetailContiner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itemDetailImgContainer{
+    height: 100%;
+    width: 50%;
+}
+
+.itemDetailImg{
+    width: 100%;
+}
+
+.itemDetailDescriptionContainer{
+    height: 100%;
+    width: 50%;
+}
+
+.itemDetailPriceContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.itemDetailBuyButton{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+}

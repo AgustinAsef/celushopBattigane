@@ -4,6 +4,10 @@
     width: 100%;
 }
 
+.navLink{
+    text-decoration: none;
+}
+
 .navSection{
     padding: 1rem;
     display: flex;
@@ -20,11 +24,22 @@
     color: black;
     margin-left: 0px;
     margin-right: 10px;
+    text-decoration: none;
 }
 
 .navImg{
     height: 50px;
     width: 50px;
+}
+
+.navLinkActive{
+    font-style:italic;
+    font-weight:bold;
+    font-size:1.2em;    
+}
+
+.navNotActive{
+    font-size:1em;    
 }
 
 .navButton{

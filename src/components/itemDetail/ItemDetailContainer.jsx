@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom"
 import { productsList } from "../ProductsPromise";
 import ItemDetail from "./ItemDetail";
+import "../../styles/ItemDetail.css"
+
  
 export default function ItemDetailContainer() {
 
@@ -23,7 +25,9 @@ export default function ItemDetailContainer() {
 
     return(
         <>
-        <ItemDetail product={product}/>
+        <div className="itemDetailContainerDiv">
+            <ItemDetail product={product}/>
+        </div>
         </>
     )
     

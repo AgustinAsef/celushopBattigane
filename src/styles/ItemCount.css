@@ -1,0 +1,31 @@
+.itemCountDivContainer{
+    padding: 1rem;
+}
+
+.itemCountDiv{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.itemCountButton{
+    width: 50px;
+    border: solid 2px;
+    display: flex;
+    justify-content:center;
+}
+
+.itemCountCarButton{
+    width: 200px;
+    height: 50px;
+    border: solid 2px; 
+}
+
+.itemCountBuyButton{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+}

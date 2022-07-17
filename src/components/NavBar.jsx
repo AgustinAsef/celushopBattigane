@@ -4,7 +4,7 @@ import CartWidget from "./cart/CartWidget";
 import {NavLink} from "react-router-dom"
 
 export default function NavBar() {
-    
+
     return(
         <>
         <nav className="nav">
@@ -19,7 +19,7 @@ export default function NavBar() {
                     <NavLink to="/productos" className={({isActive}) => (isActive ? "navLinkActive navLink" : "navNotActive, navLink")} ><p className="navButton">Productos</p></NavLink>
                     <NavLink to="/serviciotecnico" className={({isActive}) => (isActive ? "navLinkActive navLink" : "navNotActive, navLink")}><p className="navButton">Servicio Tecnico</p></NavLink>
                     <NavLink to="/contacto" className={({isActive}) => (isActive ? "navLinkActive navLink" : "navNotActive, navLink")}><p className="navButton">Contacto</p></NavLink>
-                    <CartWidget/>
+                    <NavLink to="/cart" className="navLink"><CartWidget/></NavLink>
                 </div>
             </section>
         </nav>

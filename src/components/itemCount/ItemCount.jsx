@@ -22,12 +22,13 @@ export default function ItemCount({stock, initial, product}) {
     return(
         <div className="itemCountDivContainer">
             <div className="itemCountDiv">
-                <button onClick={sumarProducto} className="itemCountButton"><h1>+</h1></button>
-                <h1>{count}</h1>
                 <button onClick={restarProducto} className="itemCountButton"><h1>-</h1></button>
+                <h1>{count}</h1>
+                <button onClick={sumarProducto} className="itemCountButton"><h1>+</h1></button>
+
             </div>
             <div className="itemCountDiv">
-                <button className="itemCountBuyButton" onClick={()=>addToCart({...product, count, inCart }) } ><strong>Agregar al carrito</strong></button>
+                <button className="itemCountBuyButton" onClick={()=>addToCart({...product, count}) } ><strong>Agregar al carrito</strong></button>
             </div>
         </div>
     );

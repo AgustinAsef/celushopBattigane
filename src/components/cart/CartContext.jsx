@@ -1,23 +1,30 @@
 import React, {createContext, useState} from "react";
+import swal from "sweetalert";
 
 export const CartContext = createContext()
 
 export const CartContextProvider = ({children}) => {
     
-     const [cart, setCart] = useState ([])
+    const [cart, setCart] = useState ([])
 
     const [cartCount, setCartCount] = useState (0)    
 
    const addToCart =(product)=>{
         if (cart.find(cart => cart.id == product.id)) {
+
+            swal("Se modificó el artículo correctamente.")
+
             
             const index = cart.findIndex (cart => cart.id == product.id)
-            
-            cart.push(product.count)
+
+            const remplace = cart.splice(index, 1, product)
+
             totalCart()
-            console.log(index);
-            
+
         } else {
+            
+            swal("Se agregó correctamente al carrito.", "si lo agregas nuevamente se modificará.")
+
             cart.push(product)
             totalCart()    
         }
